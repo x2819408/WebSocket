@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'com.nettyTest.webSocket.webSocket'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile (
+            "io.netty:netty-all:4.1.36.Final"
+            ,"com.google.protobuf:protobuf-java:3.8.0-rc-1"
+            ,"com.google.protobuf:protobuf-java-util:3.8.0-rc-1"
+    )
+}
